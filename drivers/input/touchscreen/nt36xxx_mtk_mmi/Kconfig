@@ -1,0 +1,27 @@
+config INPUT_TOUCHSCREEN_NT36XXX_MTK_MMI
+	bool "Support Motorola MediaTek Novatek touch screen"
+	depends on TOUCHSCREEN_MTK
+	select TOUCHSCREEN_MMI_PANELINFO
+	help
+	  Say Y here if you wish to enable the Novatek touch
+	  screen driver.
+
+	  If unsure, say N.
+
+config INPUT_TOUCHSCREEN_NT36XXX_MTK_MMI_CHARGE_DETECT
+	bool "Support charge detect for NT36XXX_MTK_MMI driver"
+	depends on INPUT_TOUCHSCREEN_NT36XXX_MTK_MMI
+	help
+	  Say Y here if you wish to enable charger detection
+	  for NT36XXX_MTK_MMI driver.
+
+	  If unsure, say N.
+
+config INPUT_TOUCHSCREEN_NT36XXX_MTK_MMI_MULTI_SUPPLIER
+	bool "Support multi supplier for NT36XXX_MTK_MMI driver"
+	depends on INPUT_TOUCHSCREEN_NT36XXX_MTK_MMI
+	help
+	  Say Y here if you wish to enable multi supplier
+	  for NT36XXX_MTK_MMI driver.
+
+	  If unsure, say N.

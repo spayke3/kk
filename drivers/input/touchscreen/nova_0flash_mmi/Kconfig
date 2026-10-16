@@ -1,0 +1,8 @@
+config INPUT_TOUCHSCREEN_NOVA_0FLASH_MMI
+	bool "Nova 0Flash MMI Touch Driver"
+	select TOUCHSCREEN_MMI_PANELINFO
+	help
+	  Say Y here to enable the Nova 0Flash MMI
+	  Touch driver.
+
+	  If unsure, say N.

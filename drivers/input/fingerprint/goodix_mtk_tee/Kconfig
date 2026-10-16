@@ -1,0 +1,7 @@
+config FINGERPRINT_GOODIX_MTK_TEE
+	tristate "Support Goodix Fingerprint sensor"
+	help
+	  Say Y here to enable Goodix Fingerprint
+	  sensor driver for MTK.
+
+	  If unsure, say N.

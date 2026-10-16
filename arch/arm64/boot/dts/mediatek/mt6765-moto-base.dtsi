@@ -1,0 +1,30 @@
+/*
+ * Things can done here:
+ * 	Add nodes or properties to root node
+ * 	Delete nodes or properties
+*/
+#include "sgm7220.dtsi"
+#include "tcpc_config.dtsi"
+
+/ {
+	moto_chg_tcmd: moto_chg_tcmd {
+	};
+
+	lk_charger: lk_charger {
+		/delete-property/ enable_pe_plus;
+	};
+
+	charger: charger {
+		/delete-property/ enable_dynamic_mivr;
+	};
+
+	key_google: key_google {
+	};
+
+	tboard_thermistor4: thermal-sensor4 {
+		compatible = "mediatek,mtboard-thermistor4";
+		io-channels = <&auxadc 3>;
+		io-channel-names = "thermistor-ch4";
+		interconnects = <&auxadc 3>;
+	};
+};

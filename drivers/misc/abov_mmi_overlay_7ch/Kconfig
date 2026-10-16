@@ -1,0 +1,8 @@
+config ABOV_MMI_OVERLAY_7CH
+	bool "ABOV_MMI_OVERLAY_7CH"
+	depends on MOTO_SENSORS_CLASS
+	help
+	  Say Y here to build the abov_mmi_overlay_7ch
+	  sensor driver.
+
+	  If unsure, say N.

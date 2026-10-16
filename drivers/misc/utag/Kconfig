@@ -1,0 +1,8 @@
+config MOTO_UTAGS
+	bool "Motorola utags driver"
+	depends on OF && PROC_FS
+	help
+	  Say Y here to expose the Motorola utags and hw partitions
+	  under /proc/config and /proc/hw.
+
+	  If unsure, say N.

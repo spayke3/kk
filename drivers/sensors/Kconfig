@@ -1,0 +1,11 @@
+menu "Motorola Sensor Class"
+
+config MOTO_SENSORS_CLASS
+	bool "Motorola sensors device class"
+	help
+	  Say Y here to enable support for Motorola sensors
+	  device class.
+
+	  If unsure, say N.
+
+endmenu

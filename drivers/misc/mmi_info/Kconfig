@@ -1,0 +1,8 @@
+config MOTO_MMI_INFO
+	bool "Motorola mmi_info driver"
+	depends on OF
+	help
+	  Say Y here to expose the boot, RAM, storage and unit
+	  information passed by the Motorola bootloader.
+
+	  If unsure, say N.

@@ -1,0 +1,9 @@
+config INPUT_TOUCHSCREEN_HIMAX_MTK_MMI
+	bool "Support Motorola MediaTek Himax touch screen"
+	depends on TOUCHSCREEN_MTK
+	select TOUCHSCREEN_MMI_PANELINFO
+	help
+	  Say Y here if you wish to enable the Himax touch
+	  screen driver.
+
+	  If unsure, say N.
