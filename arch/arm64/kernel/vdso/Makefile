@@ -21,7 +21,9 @@ ldflags-y := -shared -nostdlib -soname=linux-vdso.so.1 --hash-style=sysv \
 
 ccflags-y += $(DISABLE_LTO)
 
-ccflags-y := -fno-common -fno-builtin -fno-stack-protector -ffixed-x18
+ccflags-y := -shared -fno-common -fno-builtin -fno-stack-protector -ffixed-x18
+ccflags-y += -nostdlib -Wl,-soname=linux-vdso.so.1 -Wl,--hash-style=sysv \
+		-Wl,-Bsymbolic -Wl,--eh-frame-hdr -Wl,--build-id
 ccflags-y += -DDISABLE_BRANCH_PROFILING
 
 

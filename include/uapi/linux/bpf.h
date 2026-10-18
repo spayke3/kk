@@ -4654,41 +4654,6 @@ struct bpf_link_info {
 	};
 } __attribute__((aligned(8)));
 
-struct bpf_link_info {
-	__u32 type;
-	__u32 id;
-	__u32 prog_id;
-	union {
-		struct {
-			__aligned_u64 tp_name; /* in/out: tp_name buffer ptr */
-			__u32 tp_name_len;     /* in/out: tp_name buffer len */
-		} raw_tracepoint;
-		struct {
-			__u32 attach_type;
-		} tracing;
-		struct {
-			__u64 cgroup_id;
-			__u32 attach_type;
-		} cgroup;
-		struct {
-			__aligned_u64 target_name; /* in/out: target_name buffer ptr */
-			__u32 target_name_len;	   /* in/out: target_name buffer len */
-			union {
-				struct {
-					__u32 map_id;
-				} map;
-			};
-		} iter;
-		struct  {
-			__u32 netns_ino;
-			__u32 attach_type;
-		} netns;
-		struct {
-			__u32 ifindex;
-		} xdp;
-	};
-} __attribute__((aligned(8)));
-
 /* User bpf_sock_addr struct to access socket fields and sockaddr struct passed
  * by user and intended to be used by socket (e.g. to bind to, depends on
  * attach type).

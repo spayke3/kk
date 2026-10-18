@@ -1,0 +1,590 @@
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Hit:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+74 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ccache is already the newest version (4.9.1-1).
+bc is already the newest version (1.07.1-3ubuntu4).
+flex is already the newest version (2.6.4-8.2build1).
+0 upgraded, 0 newly installed, 0 to remove and 74 not upgraded.
+mkdir: cannot create directory ‘tmp’: File exists
+[1;32mCleaning previous build...[0m
+[1;32mCleaning source tree with make mrproper...[0m
+drivers/misc/mediatek/base/power/qos/Makefile:45: extraneous text after 'else' directive
+.
+.
+.
+drivers/misc/mediatek/ccu/src/Makefile:33: CCU_MAKE_FILE_CALLED
+ TARGET_BUILD_VARIANT = user
+ BT_PLATFORM = 6765
+ srctree = .
+[fm_drv:Kbuild] M = 
+[fm_drv:Kbuild] CFG_FM_PLAT = mt6631
+[fm_drv:Kbuild] CFG_BUILD_CONNAC2 = 
+[fm_drv:Kbuild] CFG_FM_CHIP_ID = 6765
+[fm_drv:Kbuild] CFG_FM_CHIP = mt6631
+[fm_drv:Kbuild] fmradio_drv_mt6631 is kernel module
+[fm_drv:Kbuild] src = drivers/misc/mediatek/connectivity/fmradio
+[fm_drv:Kbuild] KO_CODE_PATH = ./drivers/misc/mediatek/connectivity/fmradio
+drivers/misc/mediatek/connectivity/fmradio/Kbuild:77: *** CONFIG_MTK_FM_CHIP not defined.  Stop.
+make[4]: *** [scripts/Makefile.clean:88: drivers/misc/mediatek/connectivity/fmradio] Error 2
+make[3]: *** [scripts/Makefile.clean:88: drivers/misc/mediatek/connectivity] Error 2
+make[2]: *** [scripts/Makefile.clean:88: drivers/misc/mediatek] Error 2
+make[1]: *** [scripts/Makefile.clean:88: drivers/misc] Error 2
+make: *** [Makefile:1523: _clean_drivers] Error 2
+[1;31mWarning: make mrproper had issues, continuing...[0m
+[0;31mNot regenerating config[0m
+[1;32mGenerating defconfig...[0m
+
+WARNING: unmet direct dependencies detected for MTK_SECURE_MEM_SUPPORT
+  Depends on [n]: TRUSTONIC_TEE_SUPPORT [=n] || MTK_TEE_GP_SUPPORT [=n] || MTK_GZ_KREE [=n] && MTK_SVP_ON_MTEE_SUPPORT [=n]
+  Selected by [y]:
+  - MTK_ANDROID_DEFAULT_SETTING [=y] && (TRUSTONIC_TEE_SUPPORT [=n] || MICROTRUST_TEE_SUPPORT [=y])
+
+WARNING: unmet direct dependencies detected for ANDROID_VENDOR_HOOKS
+  Depends on [n]: ANDROID [=y] && TRACEPOINTS [=n]
+  Selected by [y]:
+  - ANDROID_DEFAULT_SETTING [=y]
+
+WARNING: unmet direct dependencies detected for MTK_SECURE_MEM_SUPPORT
+  Depends on [n]: TRUSTONIC_TEE_SUPPORT [=n] || MTK_TEE_GP_SUPPORT [=n] || MTK_GZ_KREE [=n] && MTK_SVP_ON_MTEE_SUPPORT [=n]
+  Selected by [y]:
+  - MTK_ANDROID_DEFAULT_SETTING [=y] && (TRUSTONIC_TEE_SUPPORT [=n] || MICROTRUST_TEE_SUPPORT [=y])
+
+WARNING: unmet direct dependencies detected for ANDROID_VENDOR_HOOKS
+  Depends on [n]: ANDROID [=y] && TRACEPOINTS [=n]
+  Selected by [y]:
+  - ANDROID_DEFAULT_SETTING [=y]
+
+WARNING: unmet direct dependencies detected for MTK_SECURE_MEM_SUPPORT
+  Depends on [n]: TRUSTONIC_TEE_SUPPORT [=n] || MTK_TEE_GP_SUPPORT [=n] || MTK_GZ_KREE [=n] && MTK_SVP_ON_MTEE_SUPPORT [=n]
+  Selected by [y]:
+  - MTK_ANDROID_DEFAULT_SETTING [=y] && (TRUSTONIC_TEE_SUPPORT [=n] || MICROTRUST_TEE_SUPPORT [=y])
+
+WARNING: unmet direct dependencies detected for ANDROID_VENDOR_HOOKS
+  Depends on [n]: ANDROID [=y] && TRACEPOINTS [=n]
+  Selected by [y]:
+  - ANDROID_DEFAULT_SETTING [=y]
+
+WARNING: unmet direct dependencies detected for GENERIC_COMPAT_VDSO
+  Depends on [n]: HAVE_GENERIC_VDSO [=n]
+  Selected by [y]:
+  - COMPAT_VDSO [=y] && !CPU_BIG_ENDIAN [=n] && (CC_IS_CLANG [=y] && LD_IS_LLD [=y] || !=)
+
+WARNING: unmet direct dependencies detected for STACKPROTECTOR
+  Depends on [n]: HAVE_STACKPROTECTOR [=y] && n [=n]
+  Selected by [y]:
+  - ANDROID_DEFAULT_SETTING [=y]
+
+WARNING: unmet direct dependencies detected for STACKPROTECTOR_STRONG
+  Depends on [n]: STACKPROTECTOR [=y] && n [=n]
+  Selected by [y]:
+  - ANDROID_DEFAULT_SETTING [=y]
+[1;32m######### Compiling kernel #########[0m
+make[1]: Entering directory '/workspaces/kk/out'
+arch/arm64/Makefile:48: Detected assembler with broken .inst; disassembly will be unreliable
+  GEN     ./Makefile
+scripts/kconfig/conf  --syncconfig Kconfig
+
+WARNING: unmet direct dependencies detected for MTK_SECURE_MEM_SUPPORT
+  Depends on [n]: TRUSTONIC_TEE_SUPPORT [=n] || MTK_TEE_GP_SUPPORT [=n] || MTK_GZ_KREE [=n] && MTK_SVP_ON_MTEE_SUPPORT [=n]
+  Selected by [y]:
+  - MTK_ANDROID_DEFAULT_SETTING [=y] && (TRUSTONIC_TEE_SUPPORT [=n] || MICROTRUST_TEE_SUPPORT [=y])
+
+WARNING: unmet direct dependencies detected for ANDROID_VENDOR_HOOKS
+  Depends on [n]: ANDROID [=y] && TRACEPOINTS [=n]
+  Selected by [y]:
+  - ANDROID_DEFAULT_SETTING [=y]
+
+WARNING: unmet direct dependencies detected for GENERIC_COMPAT_VDSO
+  Depends on [n]: HAVE_GENERIC_VDSO [=n]
+  Selected by [y]:
+  - COMPAT_VDSO [=y] && !CPU_BIG_ENDIAN [=n] && (CC_IS_CLANG [=y] && LD_IS_LLD [=y] || arm-linux-gnueabi-!=)
+
+WARNING: unmet direct dependencies detected for STACKPROTECTOR
+  Depends on [n]: HAVE_STACKPROTECTOR [=y] && n [=n]
+  Selected by [y]:
+  - ANDROID_DEFAULT_SETTING [=y]
+
+WARNING: unmet direct dependencies detected for STACKPROTECTOR_STRONG
+  Depends on [n]: STACKPROTECTOR [=y] && n [=n]
+  Selected by [y]:
+  - ANDROID_DEFAULT_SETTING [=y]
+
+WARNING: unmet direct dependencies detected for STACKPROTECTOR
+  Depends on [n]: HAVE_STACKPROTECTOR [=y] && n [=n]
+  Selected by [y]:
+  - ANDROID_DEFAULT_SETTING [=y]
+
+WARNING: unmet direct dependencies detected for STACKPROTECTOR_STRONG
+  Depends on [n]: STACKPROTECTOR [=y] && n [=n]
+  Selected by [y]:
+  - ANDROID_DEFAULT_SETTING [=y]
+
+WARNING: unmet direct dependencies detected for MTK_SECURE_MEM_SUPPORT
+  Depends on [n]: TRUSTONIC_TEE_SUPPORT [=n] || MTK_TEE_GP_SUPPORT [=n] || MTK_GZ_KREE [=n] && MTK_SVP_ON_MTEE_SUPPORT [=n]
+  Selected by [y]:
+  - MTK_ANDROID_DEFAULT_SETTING [=y] && (TRUSTONIC_TEE_SUPPORT [=n] || MICROTRUST_TEE_SUPPORT [=y])
+
+WARNING: unmet direct dependencies detected for ANDROID_VENDOR_HOOKS
+  Depends on [n]: ANDROID [=y] && TRACEPOINTS [=n]
+  Selected by [y]:
+  - ANDROID_DEFAULT_SETTING [=y]
+
+WARNING: unmet direct dependencies detected for GENERIC_COMPAT_VDSO
+  Depends on [n]: HAVE_GENERIC_VDSO [=n]
+  Selected by [y]:
+  - COMPAT_VDSO [=y] && !CPU_BIG_ENDIAN [=n] && (CC_IS_CLANG [=y] && LD_IS_LLD [=y] || arm-linux-gnueabi-!=)
+
+WARNING: unmet direct dependencies detected for MTK_SECURE_MEM_SUPPORT
+  Depends on [n]: TRUSTONIC_TEE_SUPPORT [=n] || MTK_TEE_GP_SUPPORT [=n] || MTK_GZ_KREE [=n] && MTK_SVP_ON_MTEE_SUPPORT [=n]
+  Selected by [y]:
+  - MTK_ANDROID_DEFAULT_SETTING [=y] && (TRUSTONIC_TEE_SUPPORT [=n] || MICROTRUST_TEE_SUPPORT [=y])
+
+WARNING: unmet direct dependencies detected for ANDROID_VENDOR_HOOKS
+  Depends on [n]: ANDROID [=y] && TRACEPOINTS [=n]
+  Selected by [y]:
+  - ANDROID_DEFAULT_SETTING [=y]
+
+WARNING: unmet direct dependencies detected for GENERIC_COMPAT_VDSO
+  Depends on [n]: HAVE_GENERIC_VDSO [=n]
+  Selected by [y]:
+  - COMPAT_VDSO [=y] && !CPU_BIG_ENDIAN [=n] && (CC_IS_CLANG [=y] && LD_IS_LLD [=y] || arm-linux-gnueabi-!=)
+
+WARNING: unmet direct dependencies detected for STACKPROTECTOR
+  Depends on [n]: HAVE_STACKPROTECTOR [=y] && n [=n]
+  Selected by [y]:
+  - ANDROID_DEFAULT_SETTING [=y]
+
+WARNING: unmet direct dependencies detected for STACKPROTECTOR_STRONG
+  Depends on [n]: STACKPROTECTOR [=y] && n [=n]
+  Selected by [y]:
+  - ANDROID_DEFAULT_SETTING [=y]
+  UPD     include/config/kernel.release
+  GEN     ./Makefile
+  WRAP    arch/arm64/include/generated/uapi/asm/errno.h
+  WRAP    arch/arm64/include/generated/uapi/asm/ioctl.h
+  WRAP    arch/arm64/include/generated/uapi/asm/ioctls.h
+  WRAP    arch/arm64/include/generated/uapi/asm/ipcbuf.h
+  WRAP    arch/arm64/include/generated/uapi/asm/kvm_para.h
+  WRAP    arch/arm64/include/generated/uapi/asm/mman.h
+  WRAP    arch/arm64/include/generated/uapi/asm/msgbuf.h
+  WRAP    arch/arm64/include/generated/uapi/asm/poll.h
+  WRAP    arch/arm64/include/generated/uapi/asm/resource.h
+  WRAP    arch/arm64/include/generated/uapi/asm/sembuf.h
+  WRAP    arch/arm64/include/generated/uapi/asm/shmbuf.h
+  WRAP    arch/arm64/include/generated/uapi/asm/socket.h
+  WRAP    arch/arm64/include/generated/uapi/asm/sockios.h
+  WRAP    arch/arm64/include/generated/uapi/asm/swab.h
+  WRAP    arch/arm64/include/generated/uapi/asm/termbits.h
+  WRAP    arch/arm64/include/generated/uapi/asm/termios.h
+  WRAP    arch/arm64/include/generated/uapi/asm/types.h
+  UPD     include/generated/uapi/linux/version.h
+  UPD     include/generated/utsrelease.h
+$GED: CONFIG_MTK_PLATFORM is ["mt6765"]
+[GPU_DEBUG] MTK_GPU_VERSION 2 = doma
+[GPU_DEBUG] MTK_PLATFORM = mt6765
+../drivers/misc/mediatek/base/power/qos/Makefile:45: extraneous text after 'else' directive
+..
+FDVT: Drv use 4.0 folder
+..
+  WRAP    arch/arm64/include/generated/asm/bugs.h
+  WRAP    arch/arm64/include/generated/asm/delay.h
+  WRAP    arch/arm64/include/generated/asm/div64.h
+  WRAP    arch/arm64/include/generated/asm/dma.h
+  WRAP    arch/arm64/include/generated/asm/dma-contiguous.h
+  WRAP    arch/arm64/include/generated/asm/early_ioremap.h
+  WRAP    arch/arm64/include/generated/asm/emergency-restart.h
+  WRAP    arch/arm64/include/generated/asm/hw_irq.h
+  WRAP    arch/arm64/include/generated/asm/irq_regs.h
+  WRAP    arch/arm64/include/generated/asm/kdebug.h
+  WRAP    arch/arm64/include/generated/asm/kmap_types.h
+  WRAP    arch/arm64/include/generated/asm/local.h
+  WRAP    arch/arm64/include/generated/asm/local64.h
+  WRAP    arch/arm64/include/generated/asm/mcs_spinlock.h
+  WRAP    arch/arm64/include/generated/asm/mm-arch-hooks.h
+  WRAP    arch/arm64/include/generated/asm/msi.h
+  WRAP    arch/arm64/include/generated/asm/preempt.h
+  WRAP    arch/arm64/include/generated/asm/qrwlock.h
+  WRAP    arch/arm64/include/generated/asm/qspinlock.h
+../drivers/misc/mediatek/ccu/src/Makefile:33: CCU_MAKE_FILE_CALLED
+  WRAP    arch/arm64/include/generated/asm/rwsem.h
+  WRAP    arch/arm64/include/generated/asm/segment.h
+  WRAP    arch/arm64/include/generated/asm/serial.h
+  WRAP    arch/arm64/include/generated/asm/set_memory.h
+  WRAP    arch/arm64/include/generated/asm/sizes.h
+  WRAP    arch/arm64/include/generated/asm/switch_to.h
+../drivers/misc/mediatek/ccu/src/1.2/Makefile:28: CCU_INC=../drivers/misc/mediatek/ccu/src/mt6765/ccu_ext_interface
+  WRAP    arch/arm64/include/generated/asm/trace_clock.h
+  WRAP    arch/arm64/include/generated/asm/unaligned.h
+  WRAP    arch/arm64/include/generated/asm/user.h
+  WRAP    arch/arm64/include/generated/asm/vga.h
+  HOSTCC  scripts/dtc/dtc.o
+  HOSTCC  scripts/dtc/flattree.o
+ TARGET_BUILD_VARIANT = user
+ BT_PLATFORM = 6765
+ srctree = ..
+../drivers/misc/mediatek/connectivity/common/Kbuild:113: wmt_drv build-in boot.img
+../drivers/misc/mediatek/connectivity/common/Kbuild:209: KERNEL_VERSION_SUPPORT_CHIPID_LIST=[6765]
+[fm_drv:Kbuild] M = 
+[fm_drv:Kbuild] CFG_FM_PLAT = mt6631
+[fm_drv:Kbuild] CFG_BUILD_CONNAC2 = 
+[fm_drv:Kbuild] CFG_FM_CHIP_ID = 6765
+[fm_drv:Kbuild] CFG_FM_CHIP = mt6631
+[fm_drv:Kbuild] fmradio_drv_mt6631 build-in boot.img
+[fm_drv:Kbuild] src = drivers/misc/mediatek/connectivity/fmradio
+[fm_drv:Kbuild] KO_CODE_PATH = ../drivers/misc/mediatek/connectivity/fmradio
+../drivers/misc/mediatek/connectivity/gps/Makefile:17: GPS_CHIP_ID != common
+../drivers/misc/mediatek/connectivity/wlan/adaptor/Makefile:51: wmt_chrdev_wifi build-in boot.img
+os option: linux
+$MTK_PLATFORM is [mt6765]
+$WLAN_CHIP_ID is [6765]
+$MTK_COMBO_CHIP is [CONNAC]
+../drivers/misc/mediatek/connectivity/wlan/core/gen4m/Makefile:550: wlan_drv_gen4m build-in boot.img
+$CCFLAG is [{-Wno-unused-value -Wno-unused-result -Wno-format -Wno-parentheses -DDRIVER_BUILD_DATE='"20261018024150"' -UMT6620 -UMT6628 -UMT5931 -UMT6630 -UMT6632 -UMT7663 -USOC2_1X1 -USOC2_2X2 -UUT_TEST_MODE -UMT7915 -USOC3_0 -UMT7961 -USOC5_0 -USOC7_0 -DCONFIG_WLAN_MTK_EMI=1 -DMOTO_UTAGS_MAC=1 -DMOTO_DYNAMIC_TX_PWR=1 -DCFG_SUPPORT_DEBUG_FS=0 -DWLAN_INCLUDE_PROC -DCFG_SUPPORT_AGPS_ASSIST=0 -DCFG_SUPPORT_TSF_USING_BOOTTIME=1 -DARP_MONITER_ENABLE=1 -DLINUX -DCONNAC -DCFG_ENABLE_HOST_BUS_TIMEOUT=0 -DCFG_SUPPORT_SET_IPV6_NETWORK=0 -DCFG_ANDORID_CONNINFRA_SUPPORT=0 -DCFG_SUPPORT_CONNAC2X=0 -DCFG_SUPPORT_CONNAC2X_2x2=0 -DCFG_SUPPORT_802_11AX=0 -DCFG_SUPPORT_802_11BE=0 -DCFG_SUPPORT_WIFI_6G=0 -DCFG_SUPPORT_TWT=0 -DCFG_TWT_SMART_STA=0 -DCFG_DRIVER_INITIAL_RUNNING_MODE=3 -DCFG_MOT_REM_CH12_CH13 -DCFG_SUPPORT_DUAL_STA=0 -DCFG_MTK_ANDROID_WMT=1 -DCFG_SUPPORT_CONNINFRA=0 -DCFG_ANDORID_CONNINFRA_COREDUMP_SUPPORT=0 -DCFG_SUPPORT_PRE_ON_PHY_ACTION=0 -I../drivers/misc/mediatek/connectivity/common/common_main/include -I../drivers/misc/mediatek/connectivity/common/common_main/linux/include -DWMT_IDC_SUPPORT=1 -DMTK_WCN_WMT_STP_EXP_SYMBOL_ABSTRACT -DCFG_SUPPORT_POWER_THROTTLING=0 -DCFG_MTK_ANDROID_EMI=1 -DCFG_WIFI_IP_SET=1 -DCFG_BUILT_IN_DRIVER=1 -DCFG_SUPPORT_CHNL_CONFLICT_REVISE=0 -DCFG_SUPPORT_AEE=0 -DBUILD_QA_DBG=0 -D_HIF_AXI=1 -DCFG_DOWNLOAD_DYN_MEMORY_MAP=0 -DCFG_SUPPORT_PASSPOINT=1 -DCFG_HS20_DEBUG=1 -DCFG_MET_PACKET_TRACE_SUPPORT=1 -DCFG_MET_TAG_SUPPORT=0 -DCFG_TC3_FEATURE=0 -DCFG_TC10_FEATURE=0 -DCONFIG_MTK_MD_SUPPORT=1 -DCFG_TC1_FEATURE=0 -DCFG_SUPPORT_NAN=0 -DDBG=0 -Idrivers/misc/mediatek/connectivity/wlan/core/gen4m/os -Idrivers/misc/mediatek/connectivity/wlan/core/gen4m/os/linux/include -Idrivers/misc/mediatek/connectivity/wlan/core/gen4m/include -Idrivers/misc/mediatek/connectivity/wlan/core/gen4m/include/nic -Idrivers/misc/mediatek/connectivity/wlan/core/gen4m/include/mgmt -Idrivers/misc/mediatek/connectivity/wlan/core/gen4m/include/chips -I../drivers/misc/mediatek/base/power/include/ -I../drivers/misc/mediatek/include/mt-plat/ -I../drivers/misc/mediatek/performance/include/ -I../drivers/misc/mediatek/emi/mt6765 -I../drivers/misc/mediatek/emi/submodule -I../drivers/misc/mediatek/pmic/include/ -I../drivers/misc/mediatek/power_throttling/ -I../drivers/misc/mediatek/connectivity/common -I../drivers/devfreq/ -I../net -I../drivers/misc/mediatek/connectivity/connfem/include/ -DCFG_MTK_MDDP_SUPPORT=0 -Idrivers/misc/mediatek/connectivity/wlan/core/gen4m/os/linux/hif/common/include -Idrivers/misc/mediatek/connectivity/wlan/core/gen4m/os/linux/hif/axi/include -DCONFIG_WLAN_DRV_BUILD_IN=1 -DCFG_SUPPORT_PKT_OFLD=0 -DCONFIG_WLAN_SERVICE=1 -DCONFIG_TEST_ENGINE_OFFLOAD=1 -Idrivers/misc/mediatek/connectivity/wlan/core/gen4m/wlan_service/include -Idrivers/misc/mediatek/connectivity/wlan/core/gen4m/wlan_service/service/include -Idrivers/misc/mediatek/connectivity/wlan/core/gen4m/wlan_service/glue/osal/include -Idrivers/misc/mediatek/connectivity/wlan/core/gen4m/wlan_service/glue/hal/include}]
+$MTK_WLAN_SERVICE is [{wlan_service/agent/agent.o wlan_service/service/service_test.o wlan_service/service/test_engine.o wlan_service/glue/osal/gen4m/sys_adaption_gen4m.o wlan_service/glue/osal/gen4m/net_adaption_gen4m.o wlan_service/glue/hal/gen4m/operation_gen4m.o}]
+CONFIG_MTK_PLATFORM_CCCI := mt6765
+CONFIG_MTK_PLATFORM_CCCI := "mt6765"
+MTK_PLATFORM_CCCI := mt6765
+  HOSTCC  scripts/dtc/fstree.o
+  HOSTCC  scripts/dtc/data.o
+imgsensor drv by common ../common/v1/hynix_hi1337_i/ ../common/v1/hynix_hi1337_ii/ ../common/v1/hynix_hi1337_iii/ ../common/v1/hynix_hi1337_iiii/ ../common/v1/hynix_hi556_i/ ../common/v1/gc_gc5035_i/ ../common/v1/gc_gc5035_ii/ ../common/v1/gc_gc5035_iii/ ../common/v1/gc_gc5035_iiii/ ../common/v1/hynix_hi259_i/ ../common/v1/hynix_hi259_ii/ ../common/v1/gc_gc02m1_ii/ ../common/v1/hynix_hi259_iii/ ../common/v1/hynix_hi259_iv/
+  HOSTCC  scripts/dtc/livetree.o
+  HOSTCC  scripts/dtc/treesource.o
+  HOSTCC  scripts/dtc/srcpos.o
+  HOSTCC  scripts/dtc/checks.o
+M4U platform folder:"mt6765"
+M4U version:2.0
+  HOSTCC  scripts/dtc/util.o
+  LEX     scripts/dtc/dtc-lexer.lex.c
+  YACC    scripts/dtc/dtc-parser.tab.h
+TCORE_UT_TESTS_SUPPORT = n
+TCORE_PROFILING_SUPPORT = n
+TCORE_PROFILING_AUTO_DUMP = n
+TCORE_MEMORY_LEAK_DETECTION_SUPPORT = n
+  YACC    scripts/dtc/dtc-parser.tab.c
+shaohua
+
+y
+  HOSTCC  scripts/dtc/yamltree.o
+  HOSTCC  scripts/dtc/dtc-lexer.lex.o
+  HOSTCC  scripts/dtc/dtc-parser.tab.o
+  HOSTLD  scripts/dtc/dtc
+  HOSTCC  scripts/genksyms/genksyms.o
+  YACC    scripts/genksyms/parse.tab.c
+  LEX     scripts/genksyms/lex.lex.c
+  YACC    scripts/genksyms/parse.tab.h
+ION:enable mtk ion
+  HOSTCC  scripts/genksyms/parse.tab.o
+  HOSTCC  scripts/genksyms/lex.lex.o
+"CONFIG_MICROTRUST_TEE_VERSION="400""
+"CONFIG_MICROTRUST_TEE_SUPPORT=y"
+"CONFIG_MICROTRUST_TZ_DRIVER=Y"
+"CONFIG_MICROTRUST_VFS_DRIVER=Y"
+"CONFIG_MICROTRUST_FP_DRIVER=Y"
+"CONFIG_MICROTRUST_DEBUG="
+"CONFIG_MICROTRUST_TEST_DRIVERS="
+  HOSTLD  scripts/genksyms/genksyms
+  CC      scripts/mod/empty.o
+  HOSTCC  scripts/mod/mk_elfconfig
+  CC      scripts/mod/devicetable-offsets.s
+  MKELF   scripts/mod/elfconfig.h
+  HOSTCC  scripts/mod/modpost.o
+  HOSTCC  scripts/selinux/genheaders/genheaders
+  HOSTCC  scripts/selinux/mdp/mdp
+  UPD     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/sumversion.o
+  HOSTCC  scripts/mod/file2alias.o
+  CC      kernel/bounds.s
+  UPD     include/generated/timeconst.h
+  UPD     include/generated/bounds.h
+  CC      arch/arm64/kernel/asm-offsets.s
+  HOSTLD  scripts/mod/modpost
+  HOSTCC  scripts/bin2c
+  HOSTCC  scripts/kallsyms
+  HOSTCC  scripts/sortextable
+../scripts/sortextable.c:165:15: warning: variable 'w8' set but not used [-Wunused-but-set-global]
+  165 | static void (*w8)(uint64_t, uint64_t *);
+      |               ^
+../scripts/sortextable.c:167:15: warning: variable 'w2' set but not used [-Wunused-but-set-global]
+  167 | static void (*w2)(uint16_t, uint16_t *);
+      |               ^
+  UPD     include/generated/asm-offsets.h
+  CALL    ../scripts/checksyscalls.sh
+2 warnings generated.
+  HOSTCC  scripts/asn1_compiler
+  HOSTCC  scripts/extract-cert
+  LDS     arch/arm64/kernel/vdso/vdso.lds
+  VDSOA   arch/arm64/kernel/vdso/gettimeofday.o
+  VDSOA   arch/arm64/kernel/vdso/note.o
+  VDSOA   arch/arm64/kernel/vdso/sigreturn.o
+  VDSOL   arch/arm64/kernel/vdso/vdso.so.dbg
+  VDSOSYM include/generated/vdso-offsets.h
+  CHK     include/generated/compile.h
+  HOSTCC  usr/gen_init_cpio
+  UPD     include/generated/compile.h
+  CC      init/main.o
+  GEN     usr/initramfs_data.cpio
+  AS      usr/initramfs_data.o
+  AR      usr/built-in.a
+  AR      arch/arm64/kernel/probes/built-in.a
+  OBJCOPY arch/arm64/kernel/vdso/vdso.so
+  AS      arch/arm64/kernel/vdso/vdso.o
+  AR      arch/arm64/kernel/vdso/built-in.a
+  CC      arch/arm64/kernel/debug-monitors.o
+  AS      arch/arm64/kernel/entry.o
+  CC      arch/arm64/kernel/irq.o
+  CC      init/version.o
+  CC      arch/arm64/kernel/fpsimd.o
+  CC      init/do_mounts.o
+  AS      arch/arm64/kernel/entry-fpsimd.o
+  CC      arch/arm64/kernel/process.o
+  CC      init/do_mounts_rd.o
+  CC      arch/arm64/kernel/ptrace.o
+  CC      init/do_mounts_initrd.o
+  CC      arch/arm64/kernel/setup.o
+  CC      init/initramfs.o
+  CC      arch/arm64/kernel/signal.o
+  CC      init/calibrate.o
+  CC      init/init_task.o
+In file included from ../init/init_task.c:6:
+../include/linux/sched/sysctl.h:110:2: error: #endif without #if
+  110 | #endif /* _LINUX_SCHED_SYSCTL_H */
+      |  ^
+1 error generated.
+make[2]: *** [../scripts/Makefile.build:336: init/init_task.o] Error 1
+make[1]: *** [/workspaces/kk/Makefile:1242: init] Error 2
+make[1]: *** Waiting for unfinished jobs....
+  CC      arch/arm64/kernel/sys.o
+  CC      arch/arm64/kernel/stacktrace.o
+  CC      arch/arm64/kernel/time.o
+  CC      arch/arm64/kernel/traps.o
+  CC      arch/arm64/kernel/io.o
+  CC      arch/arm64/kernel/vdso.o
+  AS      arch/arm64/kernel/hyp-stub.o
+  CC      arch/arm64/kernel/psci.o
+../arch/arm64/kernel/vdso.c:112:29: warning: declaration of 'enum arch_vdso_type' will not be visible outside of this function [-Wvisibility]
+  112 | static int __vdso_init(enum arch_vdso_type arch_index)
+      |                             ^
+../arch/arm64/kernel/vdso.c:112:44: error: variable has incomplete type 'enum arch_vdso_type'
+  112 | static int __vdso_init(enum arch_vdso_type arch_index)
+      |                                            ^
+../arch/arm64/kernel/vdso.c:112:29: note: forward declaration of 'enum arch_vdso_type'
+  112 | static int __vdso_init(enum arch_vdso_type arch_index)
+      |                             ^
+../arch/arm64/kernel/vdso.c:118:13: error: use of undeclared identifier 'vdso_lookup'; did you mean 'd_lookup'?
+  118 |         if (memcmp(vdso_lookup[arch_index].vdso_code_start, "\177ELF", 4)) {
+      |                    ^~~~~~~~~~~
+      |                    d_lookup
+../include/linux/dcache.h:288:23: note: 'd_lookup' declared here
+  288 | extern struct dentry *d_lookup(const struct dentry *, const struct qstr *);
+      |                       ^
+../arch/arm64/kernel/vdso.c:123:2: error: use of undeclared identifier 'vdso_lookup'; did you mean 'd_lookup'?
+  123 |         vdso_lookup[arch_index].vdso_pages = (
+      |         ^~~~~~~~~~~
+      |         d_lookup
+../include/linux/dcache.h:288:23: note: 'd_lookup' declared here
+  288 | extern struct dentry *d_lookup(const struct dentry *, const struct qstr *);
+      |                       ^
+../arch/arm64/kernel/vdso.c:124:4: error: use of undeclared identifier 'vdso_lookup'; did you mean 'd_lookup'?
+  124 |                         vdso_lookup[arch_index].vdso_code_end -
+      |                         ^~~~~~~~~~~
+      |                         d_lookup
+../include/linux/dcache.h:288:23: note: 'd_lookup' declared here
+  288 | extern struct dentry *d_lookup(const struct dentry *, const struct qstr *);
+      |                       ^
+../arch/arm64/kernel/vdso.c:125:4: error: use of undeclared identifier 'vdso_lookup'; did you mean 'd_lookup'?
+  125 |                         vdso_lookup[arch_index].vdso_code_start) >>
+      |                         ^~~~~~~~~~~
+      |                         d_lookup
+../include/linux/dcache.h:288:23: note: 'd_lookup' declared here
+  288 | extern struct dentry *d_lookup(const struct dentry *, const struct qstr *);
+      |                       ^
+../arch/arm64/kernel/vdso.c:129:26: error: use of undeclared identifier 'vdso_lookup'; did you mean 'd_lookup'?
+  129 |         vdso_pagelist = kcalloc(vdso_lookup[arch_index].vdso_pages + 1,
+      |                                 ^~~~~~~~~~~
+      |                                 d_lookup
+../include/linux/dcache.h:288:23: note: 'd_lookup' declared here
+  288 | extern struct dentry *d_lookup(const struct dentry *, const struct qstr *);
+      |                       ^
+../arch/arm64/kernel/vdso.c:140:19: error: use of undeclared identifier 'vdso_lookup'; did you mean 'd_lookup'?
+  140 |         pfn = sym_to_pfn(vdso_lookup[arch_index].vdso_code_start);
+      |                          ^~~~~~~~~~~
+      |                          d_lookup
+../arch/arm64/include/asm/memory.h:314:53: note: expanded from macro 'sym_to_pfn'
+  314 | #define sym_to_pfn(x)       __phys_to_pfn(__pa_symbol(x))
+      |                                                       ^
+../arch/arm64/include/asm/memory.h:309:71: note: expanded from macro '__pa_symbol'
+  309 | #define __pa_symbol(x)          __phys_addr_symbol(RELOC_HIDE((unsigned long)(x), 0))
+      |                                                                               ^
+../include/linux/compiler.h:233:31: note: expanded from macro 'RELOC_HIDE'
+  233 |      __ptr = (unsigned long) (ptr);                             \
+      |                               ^~~
+note: (skipping 2 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+../arch/arm64/include/asm/memory.h:261:32: note: expanded from macro '__kimg_to_phys'
+  261 | #define __kimg_to_phys(addr)    ((addr) - kimage_voffset)
+      |                                   ^~~~
+../include/asm-generic/memory_model.h:78:39: note: expanded from macro '__phys_to_pfn'
+   78 | #define __phys_to_pfn(paddr)    PHYS_PFN(paddr)
+      |                                          ^~~~~
+../include/linux/pfn.h:22:39: note: expanded from macro 'PHYS_PFN'
+   22 | #define PHYS_PFN(x)     ((unsigned long)((x) >> PAGE_SHIFT))
+      |                                           ^
+../include/linux/dcache.h:288:23: note: 'd_lookup' declared here
+  288 | extern struct dentry *d_lookup(const struct dentry *, const struct qstr *);
+      |                       ^
+../arch/arm64/kernel/vdso.c:140:19: error: use of undeclared identifier 'vdso_lookup'; did you mean 'd_lookup'?
+  140 |         pfn = sym_to_pfn(vdso_lookup[arch_index].vdso_code_start);
+      |                          ^~~~~~~~~~~
+      |                          d_lookup
+../arch/arm64/include/asm/memory.h:314:53: note: expanded from macro 'sym_to_pfn'
+  314 | #define sym_to_pfn(x)       __phys_to_pfn(__pa_symbol(x))
+      |                                                       ^
+../arch/arm64/include/asm/memory.h:309:71: note: expanded from macro '__pa_symbol'
+  309 | #define __pa_symbol(x)          __phys_addr_symbol(RELOC_HIDE((unsigned long)(x), 0))
+      |                                                                               ^
+../include/linux/compiler.h:234:13: note: expanded from macro 'RELOC_HIDE'
+  234 |     (typeof(ptr)) (__ptr + (off)); })
+      |             ^~~
+note: (skipping 2 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+../arch/arm64/include/asm/memory.h:261:32: note: expanded from macro '__kimg_to_phys'
+  261 | #define __kimg_to_phys(addr)    ((addr) - kimage_voffset)
+      |                                   ^~~~
+../include/asm-generic/memory_model.h:78:39: note: expanded from macro '__phys_to_pfn'
+   78 | #define __phys_to_pfn(paddr)    PHYS_PFN(paddr)
+      |                                          ^~~~~
+../include/linux/pfn.h:22:39: note: expanded from macro 'PHYS_PFN'
+   22 | #define PHYS_PFN(x)     ((unsigned long)((x) >> PAGE_SHIFT))
+      |                                           ^
+../include/linux/dcache.h:288:23: note: 'd_lookup' declared here
+  288 | extern struct dentry *d_lookup(const struct dentry *, const struct qstr *);
+      |                       ^
+../arch/arm64/kernel/vdso.c:142:18: error: use of undeclared identifier 'vdso_lookup'; did you mean 'd_lookup'?
+  142 |         for (i = 0; i < vdso_lookup[arch_index].vdso_pages; i++)
+      |                         ^~~~~~~~~~~
+      |                         d_lookup
+../include/linux/dcache.h:288:23: note: 'd_lookup' declared here
+  288 | extern struct dentry *d_lookup(const struct dentry *, const struct qstr *);
+      |                       ^
+../arch/arm64/kernel/vdso.c:145:2: error: use of undeclared identifier 'vdso_lookup'; did you mean 'd_lookup'?
+  145 |         vdso_lookup[arch_index].dm->pages = &vdso_pagelist[0];
+      |         ^~~~~~~~~~~
+      |         d_lookup
+../include/linux/dcache.h:288:23: note: 'd_lookup' declared here
+  288 | extern struct dentry *d_lookup(const struct dentry *, const struct qstr *);
+      |                       ^
+../arch/arm64/kernel/vdso.c:146:2: error: use of undeclared identifier 'vdso_lookup'; did you mean 'd_lookup'?
+  146 |         vdso_lookup[arch_index].cm->pages = &vdso_pagelist[1];
+      |         ^~~~~~~~~~~
+      |         d_lookup
+../include/linux/dcache.h:288:23: note: 'd_lookup' declared here
+  288 | extern struct dentry *d_lookup(const struct dentry *, const struct qstr *);
+      |                       ^
+../arch/arm64/kernel/vdso.c:151:42: warning: declaration of 'enum arch_vdso_type' will not be visible outside of this function [-Wvisibility]
+  151 | static int __setup_additional_pages(enum arch_vdso_type arch_index,
+      |                                          ^
+../arch/arm64/kernel/vdso.c:151:57: error: variable has incomplete type 'enum arch_vdso_type'
+  151 | static int __setup_additional_pages(enum arch_vdso_type arch_index,
+      |                                                         ^
+../arch/arm64/kernel/vdso.c:151:42: note: forward declaration of 'enum arch_vdso_type'
+  151 | static int __setup_additional_pages(enum arch_vdso_type arch_index,
+      |                                          ^
+../arch/arm64/kernel/vdso.c:159:18: error: use of undeclared identifier 'vdso_lookup'; did you mean 'd_lookup'?
+  159 |         vdso_text_len = vdso_lookup[arch_index].vdso_pages << PAGE_SHIFT;
+      |                         ^~~~~~~~~~~
+      |                         d_lookup
+../include/linux/dcache.h:288:23: note: 'd_lookup' declared here
+  288 | extern struct dentry *d_lookup(const struct dentry *, const struct qstr *);
+      |                       ^
+../arch/arm64/kernel/vdso.c:171:12: error: use of undeclared identifier 'vdso_lookup'; did you mean 'd_lookup'?
+  171 |                                        vdso_lookup[arch_index].dm);
+      |                                        ^~~~~~~~~~~
+      |                                        d_lookup
+../include/linux/dcache.h:288:23: note: 'd_lookup' declared here
+  288 | extern struct dentry *d_lookup(const struct dentry *, const struct qstr *);
+      |                       ^
+../arch/arm64/kernel/vdso.c:180:12: error: use of undeclared identifier 'vdso_lookup'; did you mean 'd_lookup'?
+  180 |                                        vdso_lookup[arch_index].cm);
+      |                                        ^~~~~~~~~~~
+      |                                        d_lookup
+../include/linux/dcache.h:288:23: note: 'd_lookup' declared here
+  288 | extern struct dentry *d_lookup(const struct dentry *, const struct qstr *);
+      |                       ^
+../arch/arm64/kernel/vdso.c:199:9: error: implicit declaration of function '__vdso_remap' [-Werror,-Wimplicit-function-declaration]
+  199 |         return __vdso_remap(ARM64_VDSO32, sm, new_vma);
+      |                ^
+../arch/arm64/kernel/vdso.c:199:9: note: did you mean 'vdso_mremap'?
+../arch/arm64/kernel/vdso.c:98:12: note: 'vdso_mremap' declared here
+   98 | static int vdso_mremap(const struct vm_special_mapping *sm,
+      |            ^
+../arch/arm64/kernel/vdso.c:199:22: error: use of undeclared identifier 'ARM64_VDSO32'
+  199 |         return __vdso_remap(ARM64_VDSO32, sm, new_vma);
+      |                             ^~~~~~~~~~~~
+../arch/arm64/kernel/vdso.c:268:2: error: use of undeclared identifier 'vdso_lookup'; did you mean 'd_lookup'?
+  268 |         vdso_lookup[ARM64_VDSO32].dm = &aarch32_vdso_spec[C_VVAR];
+      |         ^~~~~~~~~~~
+      |         d_lookup
+../include/linux/dcache.h:288:23: note: 'd_lookup' declared here
+  288 | extern struct dentry *d_lookup(const struct dentry *, const struct qstr *);
+      |                       ^
+../arch/arm64/kernel/vdso.c:268:14: error: use of undeclared identifier 'ARM64_VDSO32'
+  268 |         vdso_lookup[ARM64_VDSO32].dm = &aarch32_vdso_spec[C_VVAR];
+      |                     ^~~~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+2 warnings and 20 errors generated.
+make[2]: *** [../scripts/Makefile.build:335: arch/arm64/kernel/vdso.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [/workspaces/kk/Makefile:1242: arch/arm64/kernel] Error 2
+make[1]: Leaving directory '/workspaces/kk/out'
+make: *** [Makefile:153: sub-make] Error 2
+[1;31mKernel compilation failed![0m
+[1;31m############################################
+[1;31m##      Kernel build failed :'(           ##
+[1;31m############################################[0m
+[1;32mPacking AnyKernel3 ZIP...[0m
+gzip: /workspaces/kk/out/arch/arm64/boot/Image: No such file or directory
+[0;31mWarning: no dtb found, stock dtb stays in boot.img[0m
+  adding: tools/ (stored 0%)
+  adding: tools/lptools_static (deflated 38%)
+  adding: tools/busybox (deflated 39%)
+  adding: tools/ak3-core.sh (deflated 75%)
+  adding: tools/fec (deflated 40%)
+  adding: tools/snapshotupdater_static (deflated 43%)
+  adding: tools/magiskpolicy (deflated 41%)
+  adding: tools/httools_static (deflated 38%)
+  adding: tools/magiskboot (deflated 49%)
+  adding: anykernel.sh (deflated 38%)
+  adding: patch/ (stored 0%)
+  adding: patch/placeholder (stored 0%)
+  adding: LICENSE (deflated 73%)
+  adding: ramdisk/ (stored 0%)
+  adding: ramdisk/placeholder (stored 0%)
+  adding: Image.gz (stored 0%)
+  adding: modules/ (stored 0%)
+  adding: modules/system/ (stored 0%)
+  adding: modules/system/lib/ (stored 0%)
+  adding: modules/system/lib/modules/ (stored 0%)
+  adding: modules/system/lib/modules/placeholder (stored 0%)
+  adding: META-INF/ (stored 0%)
+  adding: META-INF/com/ (stored 0%)
+  adding: META-INF/com/google/ (stored 0%)
+  adding: META-INF/com/google/android/ (stored 0%)
+  adding: META-INF/com/google/android/update-binary (deflated 73%)
+  adding: META-INF/com/google/android/updater-script (deflated 1%)
+[1;32mFlashable zip: /workspaces/kk/newkernel/Blossom-Kernel-20261018-0242.zip[0m
+[1;32m############################################[0m
+[1;32m Build Time : 0h 0m 39s[0m
+[1;32m############################################[0m

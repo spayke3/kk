@@ -1,0 +1,8 @@
+drivers/misc/mediatek/base/power/qos/Makefile:45: extraneous text after 'else' directive
+drivers/misc/mediatek/ccu/src/Makefile:33: CCU_MAKE_FILE_CALLED
+drivers/misc/mediatek/connectivity/fmradio/Kbuild:77: *** CONFIG_MTK_FM_CHIP not defined.  Stop.
+make[4]: *** [scripts/Makefile.clean:88: drivers/misc/mediatek/connectivity/fmradio] Error 2
+make[3]: *** [scripts/Makefile.clean:88: drivers/misc/mediatek/connectivity] Error 2
+make[2]: *** [scripts/Makefile.clean:88: drivers/misc/mediatek] Error 2
+make[1]: *** [scripts/Makefile.clean:88: drivers/misc] Error 2
+make: *** [Makefile:1523: _clean_drivers] Error 2

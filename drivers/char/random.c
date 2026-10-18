@@ -757,7 +757,7 @@ void __init random_init(void)
 
 	/* Reseed if already seeded by earlier phases. */
 	if (crng_ready())
-		crng_reseed();
+		crng_reseed(NULL);
 
 	WARN(!entropy, "Missing cycle counter and fallback timer; RNG "
 		       "entropy collection will consequently suffer.");
@@ -1068,6 +1068,13 @@ void __cold rand_initialize_disk(struct gendisk *disk)
  *
  * So the re-arming always happens in the entropy loop itself.
  */
+struct entropy_timer_state {
+	unsigned long entropy;
+	struct timer_list timer;
+	atomic_t samples;
+	unsigned int samples_per_bit;
+};
+
 static void __cold entropy_timer(struct timer_list *timer)
 {
 	struct entropy_timer_state *state = container_of(timer, struct entropy_timer_state, timer);
@@ -1257,6 +1264,13 @@ static ssize_t random_read_iter(struct kiocb *kiocb, struct iov_iter *iter)
 	ret = wait_for_random_bytes();
 	if (ret != 0)
 		return ret;
+	return get_random_bytes_user(iter);
+}
+
+static ssize_t urandom_read_iter(struct kiocb *kiocb, struct iov_iter *iter)
+{
+	if (!crng_ready())
+		try_to_generate_entropy();
 	return get_random_bytes_user(iter);
 }
 

@@ -97,7 +97,6 @@ enum pm_qos_flags_status {
 #define PM_QOS_FLAG_NO_POWER_OFF	(1 << 0)
 
 struct pm_qos_request {
-	enum pm_qos_req_type type;
 #if defined(CONFIG_MACH_MT6771)
 	struct list_head list_node;
 #endif

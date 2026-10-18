@@ -48,6 +48,7 @@ endif
 endif
 
 
+ifeq ($(CONFIG_MACH_MT6781),y)
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/cmdq/v3
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/cmdq/v3/mt6781
 ccflags-y += \
